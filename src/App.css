@@ -1,28 +1,109 @@
-.App {
+.content {
+  padding: 20px;
+  text-align: center;
+  height: 700px;
+  padding-top: 100px;
+}
+
+.number-container {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.translation {
+  font-size: 60px;
+  font-weight: 100;
+  padding: 50px;
+  color: #737373;
+}
+
+button {
+  text-decoration: none;
+  border-radius: 12px;
+  border: 2px solid #4CAF50;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: #4CAF50;
+  /*background-color: #0099cc;*/
+  /*background-color: #ff5c33;*/
+  color: white;
+  font-size: 45px;
+  padding: 20px;
+}
+button:focus {
+  outline: 0;
+}
+button:hover {
+  background-color: #d9f2d9;
+  /*background-color: #b3d9ff;*/
+  /*background-color: #ffad99;*/
+  color: black;
+}
+button:active {
+  background-color: #3e8e41;
+  /*background-color: #80bfff;*/
+  /*background-color: #ff704d;*/
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+input {
+  margin-right: 20px;
+  box-sizing: border-box;
+  width: 300px;
+  padding: 10px;
+  font-size: 50px;
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+input:focus {
+  outline: 0;
+  border: 3px solid #4d94ff;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+input::placeholder {
+  font-weight: 200;
+  /*font-size: 45px;*/
 }
 
-.App-title {
-  font-size: 1.5em;
+.footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
-.App-intro {
-  font-size: large;
+.numbers {
+  animation: numbers-spin infinite 10s linear;
+  height: 50px;
 }
 
-@keyframes App-logo-spin {
+@keyframes numbers-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.header {
+  color: white;
+  background: #333333;
+  height: 200px;
+  text-align: center;
+  padding-top: 70px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+}
+p {
+  margin: 0 0 20px 0;
+}
+.footer {
+  background: #42A5F5;
+  color: white;
+  padding: 40px;
+  text-align:center;
+  height: 100px;
 }
