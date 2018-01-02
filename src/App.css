@@ -19,6 +19,16 @@
   color: #737373;
 }
 
+.warning-message {
+  color: #cc0000;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.warning {
+  border: 2px solid #cc0000;
+}
+
 button {
   text-decoration: none;
   border-radius: 12px;
@@ -26,8 +36,6 @@ button {
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   background-color: #4CAF50;
-  /*background-color: #0099cc;*/
-  /*background-color: #ff5c33;*/
   color: white;
   font-size: 45px;
   padding: 20px;
@@ -37,14 +45,10 @@ button:focus {
 }
 button:hover {
   background-color: #d9f2d9;
-  /*background-color: #b3d9ff;*/
-  /*background-color: #ffad99;*/
   color: black;
 }
 button:active {
   background-color: #3e8e41;
-  /*background-color: #80bfff;*/
-  /*background-color: #ff704d;*/
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
