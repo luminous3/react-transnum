@@ -19,7 +19,7 @@ export const teens = {
   5: "fifteen",
   6: "sixteen",
   7: "seventeen",
-  8: "eighteeen",
+  8: "eighteen",
   9: "nineteen"
 };
 
