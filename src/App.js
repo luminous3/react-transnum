@@ -24,6 +24,7 @@ class App extends Component {
 
   handleKeyPress = (event) => {
     if(event.charCode === 13) {
+      document.getElementById('numberInput').blur();
       this.handleTranslate();
     }
   }
@@ -67,6 +68,11 @@ class App extends Component {
     });
   }
 
+  handleFocus = (event) => {
+    event.target.value = "";
+    event.target.placeholder = "";
+  }
+
   render() {
     const {number, translation, invalidInput} = this.state;
     const inputClass = classnames({'warning': invalidInput});
@@ -86,7 +92,7 @@ class App extends Component {
             <input id="numberInput"
               className={inputClass}
               placeholder="Enter Value"
-              onFocus={(e) => e.target.placeholder = ""}
+              onFocus={this.handleFocus}
               onBlur={(e) => e.target.placeholder = "Enter Value"}
               onChange={this.handleInputChange}
               value={number}/>

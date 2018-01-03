@@ -65,7 +65,7 @@ export function processNumber(number) {
   })
 
   if(currValue) {
-    if(trans != "") {
+    if(trans !== "") {
       trans += convert(currValue);
     } else {
       trans += " " + convert(currValue);
