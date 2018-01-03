@@ -97,7 +97,7 @@ class App extends Component {
         <div className="content">
           <div className="translation">{!invalidInput ? translation : ""}</div>
           {invalidInput &&
-            <div className="warning-message">Please enter a valid number in the range 0-999999999999, i.e. 123</div>
+            <div className="warning-message">Please enter a valid number (no commas) in the range 0-999999999999, i.e. 123</div>
           }
           <div className="number-container">
             <input id="numberInput"
