@@ -68,7 +68,6 @@ input:focus {
 
 input::placeholder {
   font-weight: 200;
-  /*font-size: 45px;*/
 }
 
 .footer {

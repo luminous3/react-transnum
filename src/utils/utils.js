@@ -42,7 +42,7 @@ export function convert(number){
   // ones
   if(res1) {
     if(resH && !res10) {
-      currTrans += " and ";
+      currTrans += " and";
     }
     currTrans += " " + ones[res1];
   }
@@ -65,7 +65,11 @@ export function processNumber(number) {
   })
 
   if(currValue) {
-    trans += " " + convert(currValue);
+    if(trans != "") {
+      trans += convert(currValue);
+    } else {
+      trans += " " + convert(currValue);
+    }
   }
 
   let newTrans = trans.trim();

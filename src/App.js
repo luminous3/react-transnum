@@ -59,7 +59,6 @@ class App extends Component {
       translation: trans
     });
 
-    console.log(trans);
   }
 
   handleInputChange = (event) => {
